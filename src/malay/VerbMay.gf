@@ -124,6 +124,7 @@ lin
   -- : V2V -> NP -> VPSlash -> VPSlash ; -- beg me to buy
   -- SlashV2VNP v2v np vps =
 
+
   -- : Comp -> VP ;
   UseComp comp = comp;
 

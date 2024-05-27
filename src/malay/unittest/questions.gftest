@@ -37,7 +37,7 @@ LangMay: mengapa kamu pergi
 Lang: UseQCl (TTAnt TPast ASimul) PNeg (QuestIAdv why_IAdv (PredVP (UsePron youSg_Pron) (UseV go_V)))
 LangEng: why didn't you go
 LangMay: mengapa kamu tidak pergi
-
+k
 Lang: UseQCl (TTAnt TPast ASimul) PPos (QuestSlash (IdetCN (IdetQuant which_IQuant NumSg) (UseN woman_N)) (SlashVP (UsePron youSg_Pron) (SlashV2a see_V2)))
 LangEng: which woman did you see
 LangMay : kamu melihat perempuan yang mana

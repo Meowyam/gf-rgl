@@ -294,10 +294,11 @@ oper
     } ;
   
   useComp : Str -> VerbPhrase = \s -> {
-    s = \\vf,pol => verbneg pol ++ s ;
+    s = \\vf,pol => verbneg pol ++ s;
     } ;
+ 
   useCompN : Str -> VerbPhrase = \s -> {
-    s = \\vf,pol => nounneg pol ++ s ;
+    s = \\vf,pol => "adalah" ++ nounneg pol ++ s ;
     } ;
 
   linVP : VerbPhrase -> Str = \vp -> vp.s ! Active ! Pos;

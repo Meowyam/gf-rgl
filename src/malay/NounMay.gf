@@ -133,9 +133,11 @@ concrete NounMay of Noun = CatMay ** open ResMay, Prelude in {
   } ;
 
   -- : Quant
-  DefArt = baseQuant ** {
-    poss = Poss P3 ;
-  } ;
+  -- DefArt = baseQuant ** {
+  --   poss = Poss P3 ;
+  -- } ;
+    DefArt = mkQuant [] ;
+
 
     -- PossNP cn np = cn ** {
     -- s = \\nf => case <np.a, nf> of {
