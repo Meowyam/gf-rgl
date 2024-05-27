@@ -298,7 +298,7 @@ oper
     } ;
  
   useCompN : Str -> VerbPhrase = \s -> {
-    s = \\vf,pol => "adalah" ++ nounneg pol ++ s ;
+    s = \\vf,pol => nounneg pol ++ s ;
     } ;
 
   linVP : VerbPhrase -> Str = \vp -> vp.s ! Active ! Pos;
@@ -312,7 +312,7 @@ oper
 
   nounneg : Polarity -> Str = \pol -> case pol of {
     Neg => "bukan" ;
-    Pos => []
+    Pos => "adalah"
     } ;
 
   impneg : Polarity -> Str = \pol -> case pol of {

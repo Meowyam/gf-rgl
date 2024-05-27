@@ -152,9 +152,11 @@ concrete NounMay of Noun = CatMay ** open ResMay, Prelude in {
   IndefArt = mkQuant [] ;
 
   -- : Pron -> Quant
-  PossPron pron = mkQuant pron.s ** {
-    poss = Bare ; -- this becomes "kucing dia". for "kucingnya", use PossNP.
-    } ;
+  -- PossPron pron = mkQuant pron.s ** {
+  --   poss = Bare ; -- this becomes "kucing dia". for "kucingnya", use PossNP.
+  --   } ;
+  PossPron pron = mkQuant ("kepunyaan" ++ pron.s) ;
+
 
 
 --2 Common nouns
