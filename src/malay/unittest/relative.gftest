@@ -35,7 +35,7 @@ LangMay: kucing aku yang minum susu
 -- TODO verb form?
 Lang: UseCl (TTAnt TPres ASimul) PPos (PredVP (DetNP (DetQuant this_Quant NumSg)) (UseComp (CompNP (DetCN (DetQuant DefArt NumSg) (RelCN (UseN cat_N) (UseRCl (TTAnt TPres ASimul) PPos (RelVP IdRP (UseV walk_V))))))))
 LangEng: this is the cat that walks
-LangMay: ini kucing yang berjalan
+LangMay: ini adalah kucing yang berjalan
 
 
 --------------------------------------------------------------

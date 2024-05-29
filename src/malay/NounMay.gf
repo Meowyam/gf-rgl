@@ -51,9 +51,16 @@ concrete NounMay of Noun = CatMay ** open ResMay, Prelude in {
 -- Determiners can form noun phrases directly.
 
   -- : Det -> NP ;
+    -- DetNP det = emptyNP ** {
+    --   s = \\_ => linDet det ;
+    --   } ;s
     DetNP det = emptyNP ** {
-      s = \\_ => linDet det ;
+      s = \\poss => 
+      case det.poss of {
+        P0 => det.pr ++ "kepunyaan" ++ det.s;
+        _ => linDet det} ;
       } ;
+
 
   -- MassNP : CN -> NP ;
     MassNP cn = emptyNP ** {
@@ -152,10 +159,9 @@ concrete NounMay of Noun = CatMay ** open ResMay, Prelude in {
   IndefArt = mkQuant [] ;
 
   -- : Pron -> Quant
-  -- PossPron pron = mkQuant pron.s ** {
-  --   poss = Bare ; -- this becomes "kucing dia". for "kucingnya", use PossNP.
-  --   } ;
-  PossPron pron = mkQuant ("kepunyaan" ++ pron.s) ;
+  PossPron pron = mkQuant pron.s ** {
+    poss = P0 ; -- this becomes "kucing dia". for "kucingnya", use PossNP.
+    } ;
 
 
 

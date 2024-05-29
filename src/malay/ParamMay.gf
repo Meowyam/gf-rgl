@@ -80,7 +80,8 @@ oper
 -- Nouns
 
 param
-  Possession = Bare | Poss Person ;
+
+  Possession = Bare | P0 | Poss Person ;
 
   NForm = NF Number Possession ;
 
@@ -88,9 +89,12 @@ param
 
   Animacy = Animate | Inanimate ;
 
+  Humanity = Human | Nonhuman ;
+
 oper
   poss2str : Possession -> Str = \p -> case p of {
     Bare    => [] ;
+    P0  => [] ; -- for when possession exists but no suffix
     Poss P1 => "ku" ;
     Poss P2 => "mu" ;
     Poss P3 => "nya"

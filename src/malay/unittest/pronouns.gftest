@@ -21,7 +21,7 @@ LangMay: aku memukul dia
 
 -- that is my cat
 Lang: UseCl (TTAnt TPres ASimul) PPos (PredVP (DetNP (DetQuant that_Quant NumSg)) (UseComp (CompNP (DetCN (DetQuant (PossPron i_Pron) NumSg) (UseN cat_N)))))
-LangMay: itu adalah kucing kepunyaan aku
+LangMay: itu adalah kucing aku
 
 -- that cat is mine
 Lang: UseCl (TTAnt TPres ASimul) PPos (PredVP (DetCN (DetQuant that_Quant NumSg) (UseN cat_N)) (UseComp (CompNP (DetNP (DetQuant (PossPron i_Pron) NumSg)))))
@@ -29,14 +29,14 @@ LangMay: kucing itu adalah kepunyaan aku
 
 -- his/her cat is green
 Lang: UseCl (TTAnt TPres ASimul) PPos (PredVP (DetCN (DetQuant (PossPron he_Pron) NumSg) (UseN cat_N)) (UseComp (CompAP (PositA green_A))))
-LangMay: kucing kepunyaan dia hijau
+LangMay: kucing dia hijau
 
 -- I read his/her book -- two variants, different trees
 Lang: UseCl (TTAnt TPres ASimul) PPos (PredVP (UsePron i_Pron) (ComplSlash (SlashV2a read_V2) (DetCN (DetQuant IndefArt NumSg) (PossNP (UseN book_N) (UsePron she_Pron)))))
 LangMay: aku membaca bukunya
 
 Lang: UseCl (TTAnt TPres ASimul) PPos (PredVP (UsePron i_Pron) (ComplSlash (SlashV2a read_V2) (DetCN (DetQuant (PossPron he_Pron) NumSg) (UseN book_N))))
-LangMay: aku membaca buku kepunyaan dia
+LangMay: aku membaca buku dia
 
 -- I read his/her father's book
 Lang: UseCl (TTAnt TPast ASimul) PPos (PredVP (UsePron i_Pron) (ComplSlash (SlashV2a read_V2) (DetCN (DetQuant DefArt NumSg) (PossNP (UseN book_N) (DetCN (DetQuant DefArt NumSg) (PossNP (UseN2 father_N2) (UsePron she_Pron)))))))
@@ -47,7 +47,7 @@ Lang: MassNP (PossNP (UseN book_N) (UsePron he_Pron))
 LangMay: bukunya
 
 Lang: DetCN (DetQuant (PossPron he_Pron) NumSg) (UseN book_N)
-LangMay: buku kepunyaan dia
+LangMay: buku dia
 
 -- For non-pronoun NPs, only this variant
 Lang: MassNP (PossNP (UseN book_N) (DetCN (DetQuant DefArt NumSg) (UseN cat_N)))
@@ -62,8 +62,8 @@ LangMay: buku kucing
 -- If they feel wrong in the same way as "his cat of my" would in English, then they are wrong.
 Lang: DetCN (DetQuant (PossPron he_Pron) NumSg) (PossNP (UseN cat_N) (UsePron i_Pron))
 LangEng: his cat of mine
-LangMay: kucingku kepunyaan dia
+LangMay: kucingku dia
 
 Lang: DetCN (DetQuant (PossPron i_Pron) NumSg) (PossNP (UseN cat_N) (UsePron she_Pron))
 LangEng: my cat of hers
-LangMay: kucingnya kepunyaan aku
+LangMay: kucingnya aku
